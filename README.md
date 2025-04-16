@@ -6,9 +6,7 @@ Eine Web-Applikation, bei der man jeweils den höchsten Berg der Kantone abfrage
 
 **Beispiel**
 
-Wenn man beispielsweise den höchsten Berg des Kantons Bern sucht, öffnet sich eine Infobox, mit den Angaben zum höchsten Berg des Kantons. 
-
-
+Wenn man beispielsweise den höchsten Berg des Kantons Bern sucht, öffnet sich eine Infobox, mit den Angaben zum höchsten Berg des Kantons + ein Foto davon.
 
 **Parameter**
 
@@ -24,6 +22,6 @@ Wenn man beispielsweise den höchsten Berg des Kantons Bern sucht, öffnet sich 
 - Karte: Leaflet
 - Wetter: OpenMeteo
 
-
+---
 
  **Website** [Schweizer Höhenlinien](https://mmp-im2.benizubi.ch)
