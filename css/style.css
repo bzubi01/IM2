@@ -14,22 +14,22 @@ body {
   
   .title {
     font-size: 4rem;
-    margin: 4rem 0rem;
-    text-align: center;
+    margin: 4rem 7rem 0rem 0rem;
+    text-align: right;
     
   }
   
   .cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
-    padding: 0rem 7rem;
+    gap: 4rem;
+    justify-content: space-between;
+    padding: 7rem;
 
   }
   
   .card {
-    width: 300px;
+    width: 360px;
     background: #dbe5d3;
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -62,11 +62,13 @@ body {
     margin: 0;
     font-size: 1.8rem;
     font-weight: 800;
+    text-align: right;
   }
   
   .text-overlay .coordinates {
     margin-top: 5px;
     font-size: 1rem;
+    text-align: right;
   }
   
   
@@ -127,7 +129,7 @@ body {
   h1 {
     font-size: 12rem;
     font-weight: 800;
-    line-height: 1.1;
+    line-height: 0.9;
     margin: 0;
     text-align: right;
   }
@@ -172,5 +174,13 @@ body {
   .karte {
     max-width: 100%;
     min-height: 600px;
+  }
+
+  .canton-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #004d00;
+    margin-top: 1rem;
+    text-align: right;
   }
   

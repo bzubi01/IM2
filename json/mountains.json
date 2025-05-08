@@ -1,7 +1,7 @@
 [
   {
     "id": "ag",
-    "canton": "Kanton Aargau",
+    "canton": "Aargau",
     "name": "Geissfluegrat",
     "height": 908.0,
     "long": 7.964565,
@@ -10,7 +10,7 @@
   },
   {
     "id": "be",
-    "canton": "Kanton Bern",
+    "canton": "Bern",
     "name": "Finsteraarhorn",
     "height": 4274.0,
     "long": 8.12609,
@@ -19,7 +19,7 @@
   },
   {
     "id": "zh",
-    "canton": "Kanton Zürich ",
+    "canton": "Zürich ",
     "name": "Schnebelhorn",
     "height": 1291.0,
     "long": 8.979639,
@@ -28,7 +28,7 @@
   },
   {
     "id": "lu",
-    "canton": "Kanton Luzern",
+    "canton": "Luzern",
     "name": "Brienzer Rothorn",
     "height": 2348.0,
     "long": 8.046906,
@@ -37,7 +37,7 @@
   },
   {
     "id": "ur",
-    "canton": "Kanton Uri",
+    "canton": "Uri",
     "name": "Dammastock",
     "height": 3630.0,
     "long": 8.421094,
@@ -46,7 +46,7 @@
   },
   {
     "id": "sz",
-    "canton": "Kanton Schwyz",
+    "canton": "Schwyz",
     "name": "Bös Fulen",
     "height": 2801.0,
     "long": 8.945704,
@@ -55,7 +55,7 @@
   },
   {
     "id": "ow",
-    "canton": "Kanton Obwalden ",
+    "canton": "Obwalden ",
     "name": "Titlis",
     "height": 3238.0,
     "long": 8.437814,
@@ -64,7 +64,7 @@
   },
   {
     "id": "nw",
-    "canton": "Kanton Nidwalden",
+    "canton": "Nidwalden",
     "name": "Rotstöckli",
     "height": 2900.0,
     "long": 8.425766,
@@ -73,7 +73,7 @@
   },
   {
     "id": "zg",
-    "canton": "Kanton Zug",
+    "canton": "Zug",
     "name": "Wildspitz",
     "height": 1580.0,
     "long": 8.577614,
@@ -82,7 +82,7 @@
   },
   {
     "id": "fr",
-    "canton": "Kanton Freiburg",
+    "canton": "Freiburg",
     "name": "Vanil Noir",
     "height": 2389.0,
     "long": 7.14834,
@@ -91,7 +91,7 @@
   },
   {
     "id": "so",
-    "canton": "Kanton Solothurn",
+    "canton": "Solothurn",
     "name": "Hasenmatt",
     "height": 1444.0,
     "long": 7.450936,
@@ -100,7 +100,7 @@
   },
   {
     "id": "bl",
-    "canton": "Kanton Basel-Landschaft",
+    "canton": "Basel-Landschaft",
     "name": "Hinteri Egg",
     "height": 1169.0,
     "long": 7.710829,
@@ -109,7 +109,7 @@
   },
   {
     "id": "bs",
-    "canton": "Kanton Basel-Stadt",
+    "canton": "Basel-Stadt",
     "name": "St. Chrischona",
     "height": 522.0,
     "long": 7.680197,
@@ -118,7 +118,7 @@
   },
   {
     "id": "sh",
-    "canton": "Kanton Schaffhausen",
+    "canton": "Schaffhausen",
     "name": "Hagen",
     "height": 912.0,
     "long": 8.567608,
@@ -127,7 +127,7 @@
   },
   {
     "id": "ap",
-    "canton": "Kanton Appenzell",
+    "canton": "Appenzell",
     "name": "Säntis",
     "height": 2502.0,
     "long": 9.343241,
@@ -136,7 +136,7 @@
   },
   {
     "id": "sg",
-    "canton": "Kanton Sankt Gallen",
+    "canton": "Sankt Gallen",
     "name": "Ringelspitz",
     "height": 3247.0,
     "long": 9.343086,
@@ -145,7 +145,7 @@
   },
   {
     "id": "gr",
-    "canton": "Kanton Graubünden",
+    "canton": "Graubünden",
     "name": "Piz Bernina",
     "height": 4048.0,
     "long": 9.908059,
@@ -154,7 +154,7 @@
   },
   {
     "id": "tg",
-    "canton": "Kanton Thurgau",
+    "canton": "Thurgau",
     "name": "Groot",
     "height": 996.0,
     "long": 8.9664,
@@ -163,7 +163,7 @@
   },
   {
     "id": "ti",
-    "canton": "Kanton Tessin",
+    "canton": "Tessin",
     "name": "Rheinwaldhorn",
     "height": 3402.0,
     "long": 9.040203,
@@ -172,7 +172,7 @@
   },
   {
     "id": "vd",
-    "canton": "Kanton Waadt",
+    "canton": "Waadt",
     "name": "Les Diablerets",
     "height": 3216.0,
     "long": 7.19037,
@@ -181,7 +181,7 @@
   },
   {
     "id": "vs",
-    "canton": "Kanton Wallis",
+    "canton": "Wallis",
     "name": "Dufourspitze",
     "height": 4634.0,
     "long": 7.866757,
@@ -190,7 +190,7 @@
   },
   {
     "id": "ne",
-    "canton": "Kanton Neuenburg",
+    "canton": "Neuenburg",
     "name": "Chasseral Ouest",
     "height": 1553.0,
     "long": 7.035315,
@@ -199,7 +199,7 @@
   },
   {
     "id": "ge",
-    "canton": "Kanton Genf",
+    "canton": "Genf",
     "name": "Les Arales",
     "height": 517.0,
     "long": 6.309246,
@@ -208,7 +208,7 @@
   },
   {
     "id": "ju",
-    "canton": "Kanton Jura",
+    "canton": "Jura",
     "name": "Mont Raimeux",
     "height": 1301.0,
     "long": 7.428874,
@@ -217,7 +217,7 @@
   },
   {
     "id": "gl",
-    "canton": "Kanton Glarus",
+    "canton": "Glarus",
     "name": "Tödi",
     "height": 3570.3,
     "long": 8.921887,

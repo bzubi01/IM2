@@ -78,7 +78,7 @@ const cards_container = document.querySelector('.cards');
 mountains.forEach(mountain => {
     const currentWeather = weather.find(w => w.id === mountain.id); // Wetterdaten zum Berg suchen
 
-    const card = `
+    const card = `<div class="div-column"><h2 class="canton-name">${mountain.canton}</h2>
         <div class="card">
         <div class="image-container">
             <img src="img/mountains/${mountain.id}.jpg" alt="${mountain.name}" class="card-image">
@@ -97,6 +97,7 @@ mountains.forEach(mountain => {
                 <p>${currentWeather?.temperature ?? '--'} °C</p>
             </div>
         </div>
+    </div>
     </div>`;
 
     cards_container.innerHTML += card;
