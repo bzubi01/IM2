@@ -84,7 +84,7 @@ mountains.forEach(mountain => {
             <img src="img/mountains/${mountain.id}.jpg" alt="${mountain.name}" class="card-image">
             <div class="text-overlay">
                 <h2 class="mountain-name">${mountain.name}</h2>
-                <p class="coordinates">${mountain.long}  ${mountain.lat}</p>
+                <p class="coordinates">${mountain.coords}</p>
             </div>
         </div>
         <div class="card-bottom">
