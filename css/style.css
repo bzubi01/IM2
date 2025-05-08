@@ -36,6 +36,17 @@ body {
     display: flex;
     flex-direction: column;
   }
+
+.featuredcard {
+    width: 560px;
+    background: #dbe5d3;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: auto;
+}
   
   .image-container {
     position: relative;
@@ -46,6 +57,10 @@ body {
     height: 260px;
     object-fit: cover;
     display: block;
+  }
+
+  .card-image-featured {
+    height: 360px;
   }
   
   .text-overlay {
@@ -93,9 +108,10 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 1rem;
+    padding: 2rem;
     background: #dbe5d3;
     border-top: 1px solid #c3d0ba;
+    font-weight: 600;
   }
   
   .info {
@@ -149,14 +165,14 @@ body {
   .dropdown-info label {
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 3rem;
+    font-size: 2rem;
     color: #004d00;
     display: block;
     margin-bottom: 0.3rem;
   }
   
   select {
-    width: 50%;
+    width: 36%;
     padding: 0.5rem;
     font-size: 1.5rem;
     border: 2px solid #004d00;
@@ -184,3 +200,22 @@ body {
     text-align: right;
   }
   
+  #featured-mountain {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: right;
+  }
+  
+  .coordinates-featured {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #1f331f;
+    line-height: 0.1;
+    text-align: right;
+  }
+
+  .div-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+  }

@@ -36,6 +36,17 @@ for (const [key, mountains] of all_mountains_with_details.entries()) {
     all_mountains_with_details.push(details);
 }
 
+// Eindeutige Kantone sammeln und sortieren
+const uniqueCantons = [...new Set(mountains.map(m => m.canton.trim()))].sort();
+
+// Dropdown mit Kantonen füllen
+const selectElement = document.getElementById('kanton');
+uniqueCantons.forEach(canton => {
+    const option = document.createElement('option');
+    option.value = canton;
+    option.textContent = canton;
+    selectElement.appendChild(option);
+});
 
 async function loadWeather(mountains) {
     const weatherData = [];
@@ -102,3 +113,44 @@ mountains.forEach(mountain => {
 
     cards_container.innerHTML += card;
 });
+
+const featuredContainer = document.getElementById('featured-mountain');
+const dropdown = document.getElementById('kanton');
+
+dropdown.addEventListener('change', (event) => {
+    const selectedCanton = event.target.value.trim().toLowerCase();
+
+    // passenden Berg direkt finden
+    const selectedMountain = mountains.find(m => m.canton.trim().toLowerCase() === selectedCanton);
+
+    if (!selectedMountain) {
+        featuredContainer.innerHTML = '';
+        return;
+    }
+
+    const currentWeather = weather.find(w => w.id === selectedMountain.id);
+
+    featuredContainer.innerHTML = `
+            <div class="div-column">
+            <div class="card featuredcard">
+                <div class="image-container">
+                    <img src="img/mountains/${selectedMountain.id}.jpg" alt="${selectedMountain.name}" class="card-image card-image-featured">
+                    <div class="text-overlay">
+                        <h2 class="mountain-name">${selectedMountain.name}</h2>
+                    </div>
+                </div>
+                <div class="card-bottom">
+                    <div class="info">
+                        <img src="icons/hoehe.png" alt="Höhe" class="icon">
+                        <p>${selectedMountain.height} m ü. M.</p>
+                    </div>
+                    <div class="info">
+                        <img src="icons/${currentWeather?.weather_code ?? 'unknown'}.png" alt="Wetter" class="icon">
+                        <p>${currentWeather?.temperature ?? '--'} °C</p>
+                    </div>
+                </div>
+            </div>
+            <p class="coordinates-featured">${selectedMountain.coords ?? ''}</p>
+            </div>`;
+});
+
