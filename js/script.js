@@ -1,5 +1,3 @@
-console.log('Hallo Welt!');
-
 const url_mountain = 'json/mountains.json';
 async function loadMountains() {
     try {
@@ -11,7 +9,33 @@ async function loadMountains() {
     }
 }
 const mountains = await loadMountains();
+let all_mountains_with_details = [];
 console.log(mountains); // gibt die Daten der API oder false in der Konsole aus
+
+async function loadMountainsDetails(url_mountain) {
+    try {
+        const response = await fetch(url);
+        const answer = await response.json();
+        // array all_pokemon_with_details mit den details aus den detaildaten befüllen
+        return {
+            id: answer.id,
+            canton: answer.canton,
+            name: answer.name,
+            height: answer.height,
+            lat: answer.lat,
+            long: answer.long,
+            image: answer.image
+        };
+    } catch (error) {
+        console.error(error);
+        return error;
+    } 
+}
+for (const [key, mountains] of all_mountains_with_details.entries()) {
+    const details = await loadMountainsDetails(mountains.url);
+    all_mountains_with_details.push(details);
+}
+
 
 async function loadWeather(mountains) {
     const weatherData = [];
@@ -45,7 +69,34 @@ async function loadWeather(mountains) {
     return weatherData;
 }
 
-
 // Beispiel-Aufruf:
 const weather = await loadWeather(mountains);
 console.log(weather); // Array mit Wetterdaten zu jedem Berg
+
+// unsere pokemon ins HTML/DOM einfüllen
+const cards_container = document.querySelector('.cards');
+mountains.forEach(mountain => {
+    const currentWeather = weather.find(w => w.id === mountain.id); // Wetterdaten zum Berg suchen
+
+    const card = `<div class="card">
+        <div class="image-container">
+            <img src="img/${mountain.id}.jpg" alt="${mountain.name}" class="card-image">
+            <div class="text-overlay">
+                <h2 class="mountain-name">${mountain.name}</h2>
+                <p class="coordinates">${mountain.long}  ${mountain.lat}</p>
+            </div>
+        </div>
+        <div class="card-bottom">
+            <div class="info">
+                <img src="icons/hoehe.png" alt="Höhe" class="icon">
+                <p>${mountain.height} m ü. M.</p>
+            </div>
+            <div class="info">
+                <img src="icons/${currentWeather?.weather_code ?? 'unknown'}.png" alt="Wetter" class="icon">
+                <p>${currentWeather?.temperature ?? '--'} °C</p>
+            </div>
+        </div>
+    </div>`;
+
+    cards_container.innerHTML += card;
+});
