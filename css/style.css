@@ -9,13 +9,14 @@ body {
     background: #f9f9f9;
     color: #1f331f;
     margin: 0;
-    padding: 2rem;
     text-align: center;
   }
   
   .title {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
+    font-size: 4rem;
+    margin: 4rem 0rem;
+    text-align: center;
+    
   }
   
   .cards {
@@ -23,6 +24,8 @@ body {
     flex-wrap: wrap;
     gap: 2rem;
     justify-content: center;
+    padding: 0rem 7rem;
+
   }
   
   .card {
@@ -102,5 +105,72 @@ body {
   .icon {
     width: 24px;
     height: 24px;
+  }
+
+  /* Hero section */
+
+  .hero {
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100vh;
+    color: #004d00;
+  }
+  
+  .overlay {
+    height: 100%;
+    padding: 7rem;
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    font-size: 10rem;
+    font-weight: 900;
+    line-height: 1.1;
+    margin: 0;
+    text-align: right;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+.dropdown-info {
+    margin-top: 2rem;
+    text-align: right;
+}
+  
+  .dropdown-info label {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #004d00;
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+  
+  select {
+    width: 30%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 2px solid #004d00;
+    border-radius: 4px;
+    background-color: white;
+  }
+  
+  .map-container {
+    margin-top: 2rem;
+    max-width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .karte {
+    max-width: 100%;
+    min-height: 600px;
   }
   
