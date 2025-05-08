@@ -29,7 +29,7 @@ async function loadMountainsDetails(url_mountain) {
     } catch (error) {
         console.error(error);
         return error;
-    } 
+    }
 }
 for (const [key, mountains] of all_mountains_with_details.entries()) {
     const details = await loadMountainsDetails(mountains.url);
@@ -152,5 +152,24 @@ dropdown.addEventListener('change', (event) => {
             </div>
             <p class="coordinates-featured">${selectedMountain.coords ?? ''}</p>
             </div>`;
+    const cantonId = selectedMountain.id.toLowerCase();
+    document.querySelectorAll('.svg-map .kanton-highlight')
+        .forEach(el => el.classList.remove('kanton-highlight'));
+
+    const cantonElement = document.getElementById(cantonId);
+    if (cantonElement) {
+        cantonElement.classList.add('kanton-highlight');
+    }
+
+    // Marker ebenfalls hervorheben
+    document.querySelectorAll('.svg-map .marker.kanton-highlight')
+        .forEach(el => el.classList.remove('kanton-highlight'));
+
+    const markerId = `${selectedMountain.id}_marker`;
+    const markerElement = document.getElementById(markerId);
+    if (markerElement) {
+        markerElement.classList.add('marker-highlight');
+    }
 });
+
 

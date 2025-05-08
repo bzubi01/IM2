@@ -219,3 +219,14 @@ body {
     flex-direction: column;
     justify-content: right;
   }
+
+  .kanton-highlight {
+    fill: #1c5329 !important;
+    stroke-width: 1;
+  }
+
+  .marker-highlight {
+    fill: #ffffff !important;
+    stroke-width: 2;
+    opacity: 1 !important;
+  }
