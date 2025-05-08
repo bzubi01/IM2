@@ -16,7 +16,7 @@ async function loadMountainsDetails(url_mountain) {
     try {
         const response = await fetch(url);
         const answer = await response.json();
-        // array all_pokemon_with_details mit den details aus den detaildaten befüllen
+        // array all_mountains_with_details mit den details aus den detaildaten befüllen
         return {
             id: answer.id,
             canton: answer.canton,
@@ -84,7 +84,7 @@ async function loadWeather(mountains) {
 const weather = await loadWeather(mountains);
 console.log(weather); // Array mit Wetterdaten zu jedem Berg
 
-// unsere pokemon ins HTML/DOM einfüllen
+// unsere berge ins HTML/DOM einfüllen
 const cards_container = document.querySelector('.cards');
 mountains.forEach(mountain => {
     const currentWeather = weather.find(w => w.id === mountain.id); // Wetterdaten zum Berg suchen
