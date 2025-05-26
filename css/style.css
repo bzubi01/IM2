@@ -290,3 +290,12 @@ select {
   .card {
     width: 100%;
   }
+
+.kanton-hover {
+  fill: #4b7b5c !important;
+}
+
+  .kanton-hover:hover {
+  fill: #4b7b5c;
+}
+}

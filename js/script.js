@@ -173,4 +173,30 @@ dropdown.addEventListener('change', (event) => {
     }
 });
 
+document.querySelectorAll('.svg-map path[id]').forEach(path => {
+    path.addEventListener('click', () => {
+        const cantonId = path.id.toLowerCase();
+
+        // Suche nach passendem Kanton (einige JSON-Kantonnamen haben Leerzeichen)
+        const selectedMountain = mountains.find(m =>
+            m.id.toLowerCase() === cantonId
+        );
+
+        if (!selectedMountain) return;
+
+        // Setze Dropdown auf den entsprechenden Kanton
+        dropdown.value = selectedMountain.canton.trim();
+
+        // Trigger "change"-Event manuell
+        dropdown.dispatchEvent(new Event('change'));
+    });
+
+    // Optional: Hover-Effekt
+    path.addEventListener('mouseenter', () => {
+        path.classList.add('kanton-highlight');
+    });
+    path.addEventListener('mouseleave', () => {
+        path.classList.remove('kanton-highlight');
+    });
+});
 
