@@ -152,6 +152,7 @@ dropdown.addEventListener('change', (event) => {
             </div>
             <p class="coordinates-featured">${selectedMountain.coords ?? ''}</p>
             </div>`;
+
     const cantonId = selectedMountain.id.toLowerCase();
     document.querySelectorAll('.svg-map .kanton-highlight')
         .forEach(el => el.classList.remove('kanton-highlight'));

@@ -1,238 +1,292 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "owners-wide", sans-serif;
-    background: #f9f9f9;
-    color: #1f331f;
-    margin: 0;
-    text-align: center;
-  }
-  
-  .title {
-    font-size: 4rem;
-    margin: 4rem 7rem 0rem 0rem;
-    text-align: right;
-    
-  }
-  
-  .cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4rem;
-    justify-content: space-between;
-    padding: 7rem;
+  font-family: "owners-wide", sans-serif;
+  background: #f9f9f9;
+  color: #1f331f;
+  margin: 0;
+}
 
-  }
-  
-  .card {
-    width: 360px;
-    background: #dbe5d3;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    display: flex;
-    flex-direction: column;
-  }
+.title {
+  font-size: 4rem;
+  margin: 4rem 7rem 0rem 0rem;
+  text-align: right;
+
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 5rem;
+  justify-content: space-around;
+
+}
+
+.card {
+  width: 360px;
+  background: #dbe5d3;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
 
 .featuredcard {
-    width: 560px;
-    background: #dbe5d3;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    margin-left: auto;
+  width: 360px;
+  background: #dbe5d3;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-left: auto;
 }
-  
-  .image-container {
-    position: relative;
-  }
-  
-  .card-image {
-    width: 100%;
-    height: 260px;
-    object-fit: cover;
-    display: block;
-  }
 
-  .card-image-featured {
-    height: 360px;
-  }
-  
-  .text-overlay {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    text-align: center;
-    color: white;
-    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
-    padding: 0 10px;
-  }
-  
-  .text-overlay .mountain-name {
-    margin: 0;
-    font-size: 1.8rem;
-    font-weight: 800;
-    text-align: right;
-  }
-  
-  .text-overlay .coordinates {
-    margin-top: 5px;
-    font-size: 1rem;
-    text-align: right;
-  }
-  
-  
-  .card-top {
-    padding: 1rem;
-  }
-  
-  .mountain-name {
-    margin: 0;
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  .coordinates {
-    font-size: 0.9rem;
-    font-weight: 800;
-    color: #ffffff;
-    line-height: 0.1;
-  }
-  
-  .card-bottom {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 2rem;
-    background: #dbe5d3;
-    border-top: 1px solid #c3d0ba;
-    font-weight: 600;
-  }
-  
-  .info {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-  
-  .icon {
-    width: 24px;
-    height: 24px;
-  }
+.image-container {
+  position: relative;
+}
 
-  /* Hero section */
+.card-image {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+}
 
-  .hero {
-    background-image: url('../img/background.jpg');
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    height: 100vh;
-    color: #004d00;
-  }
-  
-  .overlay {
-    height: 100%;
-    padding: 7rem;
-    box-sizing: border-box;
-  }
-  
-  h1 {
-     font-size: clamp(3rem, 8vw, 12rem);
-    font-weight: 800;
-    line-height: 0.9;
-    margin: 0;
-    text-align: right;
-  }
+.card-image-featured {
+  height: 200px;
+}
 
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    margin-top: 2rem;
-  }
-  
+.text-overlay {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
+  padding: 0 10px;
+}
+
+.text-overlay .mountain-name {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 800;
+  text-align: right;
+}
+
+.text-overlay .coordinates {
+  margin-top: 5px;
+  font-size: 1rem;
+  text-align: right;
+}
+
+
+.card-top {
+  padding: 1rem;
+}
+
+.mountain-name {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.coordinates {
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 0.1;
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  background: #dbe5d3;
+  border-top: 1px solid #c3d0ba;
+  font-weight: 600;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* Hero section */
+
+.hero {
+  background-image: url('../img/background.jpg');
+  background-size: cover;
+  background-position: center;
+  height: auto;
+  width: 100vw;
+  color: #004d00;
+  padding: 5%;
+}
+
+h1 {
+  font-size: clamp(3rem, 8vw, 12rem);
+  font-weight: 800;
+  line-height: 0.9;
+  margin: 0;
+  text-align: right;
+}
+
+.grid-container {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.svg-map {
+  width: 48%;
+}
+
 .dropdown-info {
-    margin-top: 2rem;
-    text-align: right;
+  width: 48%;
+  margin-top: 2rem;
+  text-align: right;
 }
-  
-  .dropdown-info label {
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 2rem;
-    color: #004d00;
-    display: block;
-    margin-bottom: 0.3rem;
-  }
-  
-  select {
-    width: 36%;
-    padding: 0.5rem;
-    font-size: 1.5rem;
-    border: 2px solid #004d00;
-    border-radius: 4px;
-    background-color: white;
-  }
-  
-  .map-container {
-    margin-top: 2rem;
-    max-width: 100%;
-    text-align: center;
-    align-items: center;
-  }
-  
-  .karte {
-    max-width: 100%;
-    min-height: 600px;
-  }
 
-  .canton-name {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #004d00;
-    margin-top: 1rem;
-    text-align: right;
-  }
-  
-  #featured-mountain {
-    margin-top: 2rem;
-    display: flex;
-    justify-content: right;
-  }
-  
-  .coordinates-featured {
-    font-size: 3rem;
-    font-weight: 800;
-    color: #1f331f;
-    line-height: 0.1;
-    text-align: right;
-  }
+.dropdown-info label {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #004d00;
+  display: block;
+  margin-bottom: 0.3rem;
+}
 
-  .div-column {
-    display: flex;
-    flex-direction: column;
-    justify-content: right;
-  }
+select {
+  width: 36%;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  border: 2px solid #004d00;
+  border-radius: 4px;
+  background-color: white;
+}
 
-  .kanton-highlight {
-    fill: #1c5329 !important;
-    stroke-width: 1;
-  }
+.map-container {
+  margin-top: 2rem;
+  max-width: 100%;
+  text-align: center;
+  align-items: center;
+}
+
+.karte {
+  max-width: 100%;
+  min-height: 600px;
+}
+
+.canton-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #004d00;
+  margin-top: 1rem;
+  text-align: right;
+}
+
+#featured-mountain {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: right;
+}
+
+.coordinates-featured {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #1f331f;
+  line-height: 0.1;
+  text-align: right;
+}
+
+.div-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+}
+
+.kanton-highlight {
+  fill: #1c5329 !important;
+  stroke-width: 1;
+}
 
 .marker {
-    fill: black;
-    opacity: 0.8;
-    stroke: white;
-    stroke-width: 1.17;
+  fill: black;
+  opacity: 0.8;
+  stroke: white;
+  stroke-width: 1.17;
 }
 
 .marker-highlight {
-    fill: white !important;
-    opacity: 1 !important;
+  fill: white !important;
+  opacity: 1 !important;
 }
+
+ #kanton {
+    width: 60%; 
+    font-size: 1rem;
+  }
+
+@media screen and (max-width: 480px) {
+
+  .svg-map,
+  .dropdown-info {
+    width: 100%;
+  }
+
+  .grid-container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .dropdown-info label {
+    font-size: 1.5rem;
+  }
+
+  #kanton {
+    width: 90%;
+    font-size: 1.2rem;
+  }
+
+  .title {
+    font-size: 1.8rem;
+    margin: 1rem 0 1rem 0;
+    text-align: center;
+  }
+
+  .cards {
+    padding: 2rem;
+  }
+
+  .coordinates-featured {
+    display: none;
+  }
+
+  .card {
+    width: 280px;
+    background: #dbe5d3;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .card {
+    width: 100%;
+  }
