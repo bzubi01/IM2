@@ -4,10 +4,15 @@
   box-sizing: border-box;
 }
 
+:root {
+    --green: #004d00;
+    --green-light: #dbe5d3;
+}
+
 body {
   font-family: "owners-wide", sans-serif;
-  background: #f9f9f9;
-  color: #004d00;
+  background: white;
+  color: var(--green);
   margin: 0;
 }
 
@@ -29,7 +34,7 @@ body {
 
 .card {
   width: 360px;
-  background: #dbe5d3;
+  background: var(--green-light);
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -38,7 +43,7 @@ body {
 
 .featuredcard {
   width: 360px;
-  background: #dbe5d3;
+  background: var(--green-light);
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -108,8 +113,7 @@ body {
   justify-content: space-around;
   align-items: center;
   padding: 2rem;
-  background: #dbe5d3;
-  border-top: 1px solid #c3d0ba;
+  background: var(--green-light);
   font-weight: 600;
 }
 
@@ -132,7 +136,7 @@ body {
   background-position: center;
   height: auto;
   width: 100vw;
-  color: #004d00;
+  color: var(--green);
   padding: 5%;
 }
 
@@ -163,7 +167,7 @@ h1 {
   font-weight: bold;
   text-transform: uppercase;
   font-size: 2rem;
-  color: #004d00;
+  color: var(--green);
   display: block;
   margin-bottom: 0.3rem;
 }
@@ -172,7 +176,7 @@ select {
   width: 36%;
   padding: 0.5rem;
   font-size: 1.5rem;
-  border: 2px solid #004d00;
+  border: 2px solid var(--green);
   border-radius: 4px;
   background-color: white;
 }
@@ -192,7 +196,7 @@ select {
 .canton-name {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #004d00;
+  color: var(--green);
   margin-top: 1rem;
   text-align: right;
 }
@@ -206,7 +210,7 @@ select {
 .coordinates-featured {
   font-size: 2rem;
   font-weight: 800;
-  color: #1f331f;
+  color: var(--green);
   line-height: 0.1;
   text-align: right;
 }
@@ -240,8 +244,8 @@ select {
   }
 
   .site-footer {
-  background-color: #dbe5d3;
-  color: #004d00;
+  background-color: var(--green-light);
+  color: var(--green);
   padding: 2rem;
   text-align: left;
   margin-top: 4rem;
@@ -264,13 +268,17 @@ select {
 .icon-top {
   font-size: 70px;
   text-decoration: none;
-  color: #004d00;
+  color: var(--green);
   transition: 400ms;
 }
 
 .icon-top:hover {
   transform: scale(1.2);
   color: #ffffff;
+}
+
+.kantonsflaeche:hover {
+  fill: var(--green);
 }
 
 @media screen and (max-width: 480px) {
@@ -306,11 +314,12 @@ select {
 
   .coordinates-featured {
     display: none;
+    color: var(--green);
   }
 
   .card {
     width: 280px;
-    background: #dbe5d3;
+    background: var(--green-light);
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     display: flex;

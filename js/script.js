@@ -163,8 +163,9 @@ dropdown.addEventListener('change', (event) => {
     }
 
     // Marker ebenfalls hervorheben
-    document.querySelectorAll('.svg-map .marker.kanton-highlight')
-        .forEach(el => el.classList.remove('kanton-highlight'));
+    const markers = document.querySelectorAll('.svg-map .marker');
+        markers.forEach(el => el.classList.remove('marker-highlight'));
+        
 
     const markerId = `${selectedMountain.id}_marker`;
     const markerElement = document.getElementById(markerId);
@@ -189,14 +190,6 @@ document.querySelectorAll('.svg-map path[id]').forEach(path => {
 
         // Trigger "change"-Event manuell
         dropdown.dispatchEvent(new Event('change'));
-    });
-
-    // Optional: Hover-Effekt
-    path.addEventListener('mouseenter', () => {
-        path.classList.add('kanton-highlight');
-    });
-    path.addEventListener('mouseleave', () => {
-        path.classList.remove('kanton-highlight');
     });
 });
 
