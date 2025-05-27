@@ -25,3 +25,23 @@ Wenn man beispielsweise den höchsten Berg des Kantons Bern sucht, öffnet sich 
 ---
 
  **Website** [Schweizer Höhenlinien](https://mmp-im2.benizubi.ch)
+
+**Anforderungen** 
+Kurzbeschreibung des Projekts mit folgenden Themen:
+- Kurzbeschreibung des Projekts (max. 500 Zeichen)
+- Learnings und Schwierigkeiten (max. 200 Zeichen pro Person)
+- benutzte Ressourcen und Prompts
+
+**Bewertungsraster Technik**
+Punkte für Prozesserfüllung
+- API wird abgerufen (1)
+- Daten werden verarbeitet (2)
+- DOM wird dynamisch manipuliert (3)
+- Daten werden im geeigneten Datenformat dargestellt (2)
+
+Punkte für Codequalität
+- HTML, CSS valide (1)
+- Responsive (2)
+- Javascript logisch strukturiert und effizient (3)
+- Wiederverwendbarkeit (Funktionen) (2)
+- Kommentare | Nachvollziehbarkeit (1)
