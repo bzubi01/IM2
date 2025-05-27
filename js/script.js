@@ -123,6 +123,21 @@ dropdown.addEventListener('change', (event) => {
     // passenden Berg direkt finden
     const selectedMountain = mountains.find(m => m.canton.trim().toLowerCase() === selectedCanton);
 
+        if (dropdown.selectedIndex === 0) {
+        // Standardoption wurde gewählt → alles zurücksetzen
+
+        featuredContainer.innerHTML = '';
+
+        // Kantonsmarkierungen entfernen
+        document.querySelectorAll('.svg-map .kanton-highlight')
+            .forEach(el => el.classList.remove('kanton-highlight'));
+
+        document.querySelectorAll('.svg-map .marker-highlight')
+            .forEach(el => el.classList.remove('marker-highlight'));
+
+        return; // keine weitere Aktion ausführen
+    }
+
     if (!selectedMountain) {
         featuredContainer.innerHTML = '';
         return;
@@ -192,4 +207,23 @@ document.querySelectorAll('.svg-map path[id]').forEach(path => {
         dropdown.dispatchEvent(new Event('change'));
     });
 });
+
+const homeLogo = document.getElementById('home-logo');
+homeLogo.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    // 1. Dropdown zurücksetzen
+    dropdown.selectedIndex = 0;
+
+    // 2. Featured-Bereich leeren
+    featuredContainer.innerHTML = '';
+
+    // 3. Hervorhebung entfernen
+    document.querySelectorAll('.svg-map .kanton-highlight')
+        .forEach(el => el.classList.remove('kanton-highlight'));
+
+    document.querySelectorAll('.svg-map .marker-highlight')
+        .forEach(el => el.classList.remove('marker-highlight'));
+});
+
 

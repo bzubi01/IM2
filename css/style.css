@@ -281,6 +281,11 @@ select {
   fill: var(--green);
 }
 
+#home-logo {
+  text-decoration: none;
+  color: var(--green);
+}
+
 @media screen and (max-width: 460px) {
 
   .svg-map,
