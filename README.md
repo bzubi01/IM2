@@ -1,6 +1,12 @@
 # IM2 Dokumentation Projektarbeit
 ### von Joy Zimmermann und Benjamin Zuberühler
-**Unsere Konzeptidee** 
+---
+
+ **Website** ➡️ [Schweizer Höhenlinien](https://mmp-im2.benizubi.ch)
+
+ ---
+
+## Kurzbeschreibung des Projekts (max. 500 Zeichen)
 
 Eine Web-Applikation, bei der man jeweils den höchsten Berg der Kantone abfragen kann. In der Suchfunktion funktioniert über ein Dropdown, bei dem man den Kanton auswählen kann.
 
@@ -13,20 +19,26 @@ Wenn man beispielsweise den höchsten Berg des Kantons Bern sucht, öffnet sich 
 - Name des höchsten Gipfels des Kantons
 - Höhenmeter
 - Koordinaten
-- Wetter auf dem Gipfel
+- Wetter auf dem Gipfel (mit Icon)
 
 **API's**
 
 - Bergdaten: manuell recherchieren
 - Koordinaten: Open-Elevation
-- Karte: Leaflet
 - Wetter: OpenMeteo
 
 ---
 
- **Website** [Schweizer Höhenlinien](https://mmp-im2.benizubi.ch)
+## Learnings und Schwierigkeiten Beni (max. 200 Zeichen)
 
-**Anforderungen** 
+## Learnings und Schwierigkeiten Joy (max. 200 Zeichen)
+
+---
+## Benutzte Ressourcen und Prompts 
+
+---
+
+## Anforderungen
 Kurzbeschreibung des Projekts mit folgenden Themen:
 - Kurzbeschreibung des Projekts (max. 500 Zeichen)
 - Learnings und Schwierigkeiten (max. 200 Zeichen pro Person)
