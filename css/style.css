@@ -281,7 +281,7 @@ select {
   fill: var(--green);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 460px) {
 
   .svg-map,
   .dropdown-info {

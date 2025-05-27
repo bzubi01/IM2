@@ -100,11 +100,11 @@ mountains.forEach(mountain => {
         </div>
         <div class="card-bottom">
             <div class="info">
-                <img src="icons/hoehe.png" alt="Höhe" class="icon">
+                <img src="ico/hoehe.png" alt="Höhe" class="icon">
                 <p>${mountain.height} m ü. M.</p>
             </div>
             <div class="info">
-                <img src="icons/${currentWeather?.weather_code ?? 'unknown'}.png" alt="Wetter" class="icon">
+                <img src="ico/${currentWeather?.weather_code ?? 'unknown'}.png" alt="Wetter" class="icon">
                 <p>${currentWeather?.temperature ?? '--'} °C</p>
             </div>
         </div>
@@ -141,11 +141,11 @@ dropdown.addEventListener('change', (event) => {
                 </div>
                 <div class="card-bottom">
                     <div class="info">
-                        <img src="icons/hoehe.png" alt="Höhe" class="icon">
+                        <img src="ico/hoehe.png" alt="Höhe" class="icon">
                         <p>${selectedMountain.height} m ü. M.</p>
                     </div>
                     <div class="info">
-                        <img src="icons/${currentWeather?.weather_code ?? 'unknown'}.png" alt="Wetter" class="icon">
+                        <img src="ico/${currentWeather?.weather_code ?? 'unknown'}.png" alt="Wetter" class="icon">
                         <p>${currentWeather?.temperature ?? '--'} °C</p>
                     </div>
                 </div>
