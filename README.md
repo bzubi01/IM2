@@ -30,12 +30,14 @@ Wenn man beispielsweise den höchsten Berg des Kantons Bern sucht, öffnet sich 
 ---
 
 ## Learnings und Schwierigkeiten Beni (max. 200 Zeichen)
-
+Das Projekt gab das Verständnis, um dynamische, datengetriebene Webseiten zu entwickeln und die Grundkenntnisse von Javascript zu verstehen. Die grössten Schwierigkeiten hatte ich beim Verbinden der Daten mit interaktiven Elementen wie dem Dropdown oder der Karte.
 ## Learnings und Schwierigkeiten Joy (max. 200 Zeichen)
 
 ---
 ## Benutzte Ressourcen und Prompts 
+GitHub Copilot: Hat geholfen, einfache Strukturaufgaben zu übernehmen und bei kleineren Darstellungsfehler unterstützt. 
 
+ChatGPT: Hat uns das Strukturieren der eigenen mountains.json Datei abgenommen. Wurde eingesetzt, um komplexere Themen und Probleme aufzuzeigen, verständlich zu erklären und um Lösungsvorschläge zu erarbeiten.
 ---
 
 ## Anforderungen
