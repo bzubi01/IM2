@@ -27,7 +27,7 @@ Wenn man beispielsweise den höchsten Berg des Kantons Bern sucht, öffnet sich 
 - Koordinaten: Open-Elevation
 - Wetter: OpenMeteo
 
-**Erweiterungsmöglichkeiten**
+**zukünftige Erweiterungsmöglichkeiten**
 - Noch mehr Gipfel sichtbar
 - Wanderungen, die man rund um oder zu den Gipfeln machen kann
 
