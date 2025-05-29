@@ -29,9 +29,17 @@ Wenn man beispielsweise den höchsten Berg des Kantons Bern sucht, öffnet sich 
 
 ---
 
+<<<<<<< Updated upstream
 ## Learnings und Schwierigkeiten Beni (max. 200 Zeichen)
 Das Projekt gab das Verständnis, um dynamische, datengetriebene Webseiten zu entwickeln und die Grundkenntnisse von Javascript zu verstehen. Die grössten Schwierigkeiten hatte ich beim Verbinden der Daten mit interaktiven Elementen wie dem Dropdown oder der Karte.
 ## Learnings und Schwierigkeiten Joy (max. 200 Zeichen)
+=======
+## Learnings und Schwierigkeiten Beni 
+Das Projekt gab das Verständnis, um dynamische, datengetriebene Webseiten zu entwickeln und die Grundkenntnisse von Javascript zu verstehen. Die grössten Schwierigkeiten hatte ich beim Verbinden der Daten mit interaktiven Elementen wie dem Dropdown oder der Karte.
+
+## Learnings und Schwierigkeiten Joy
+Die Gruppengrösse war mit zwei Personen aus meiner Sicht optimal, auch wenn es manchmal schwer war die Arbeit zu koordinieren. Dadurch dass die Voraussetzungen etwas anders waren gab es die Schwierigkeit, dass die Arbeit fair aufgeteilt wurde. Ich konnte in diesem Projekt sehr viel lernen.
+>>>>>>> Stashed changes
 
 ---
 ## Benutzte Ressourcen und Prompts 
