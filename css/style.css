@@ -5,8 +5,8 @@
 }
 
 :root {
-    --green: #004d00;
-    --green-light: #dbe5d3;
+  --green: #004d00;
+  --green-light: #dbe5d3;
 }
 
 body {
@@ -48,7 +48,9 @@ body {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-.svg-map, .featuredcard, .coordinates-featured {
+.svg-map,
+.featuredcard,
+.coordinates-featured {
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInUp 0.6s ease forwards;
@@ -274,19 +276,19 @@ select:focus {
   opacity: 1 !important;
 }
 
- #kanton {
-    width: 60%; 
-    font-size: 1rem;
-  }
+#kanton {
+  width: 60%;
+  font-size: 1rem;
+}
 
-  .site-footer {
+.site-footer {
   background-color: var(--green-light);
   color: var(--green);
   padding: 2rem;
   text-align: left;
   margin-top: 4rem;
   font-size: 1rem;
-  
+
 
 }
 
@@ -375,11 +377,11 @@ select:focus {
     width: 100%;
   }
 
-.kanton-hover {
-  fill: #4b7b5c !important;
-}
+  .kanton-hover {
+    fill: #4b7b5c !important;
+  }
 
   .kanton-hover:hover {
-  fill: #4b7b5c;
-}
+    fill: #4b7b5c;
+  }
 }
